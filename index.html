@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: rgb(255, 0, 76);
+            font-family: sans-serif;
+        }
+
+        h1, h2 {
+            color: white;
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        /* სურათის და ტექსტის ერთიანი ყუთი */
+        .item {
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        .item img {
+            width: 300px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            display: block;
+        }
+
+        .item img:hover {
+            transform: scale(1.05) translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+            cursor: pointer;
+        }
+
+        .item p {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .contact-info {
+    text-align: center;
+    background-color: white; /* თეთრი ფონი, რომ გამოჩნდეს */
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 5px solid yellow; /* ლამაზი ყვითელი ხაზი ზემოდან */
+}
+
+.contact-info p {
+    color: black; /* წარწერა იყოს შავი */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #ff004c; /* ნომერი იყოს ისევ შენი საიტის წითელ ფერში */
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none; /* ხაზი რომ არ ჰქონდეს ქვემოდან */
+}
+span {
+    color: rgb(238, 233, 233);        /* შენი არჩეული იდეალური შავი */
+    font-size: 20px;     /* ცოტა გავადიდოთ */
+    font-weight: bold;   /* გავამუქოთ */
+    display: block;      /* ცალკე ხაზზე რომ დადგეს */
+    margin-top: 5px;     /* დაშორება სახელისგან */
+}
+    </style>
+</head>
+<body>
+
+    <h1>ისიანების ნახევარფაბრიკატები</h1>
+    <h2>დამზადებულია სითბოთი და სიყვარულით</h2>
+
+    <div class="gallery">
+        <div class="item">
+            <img src="https://i.postimg.cc/vm3JngM9/received-735790482182989.jpg">
+            <p>ხინკალი</p>
+            <span>1ლარი</span>
+        </div>
+
+        <div class="item">
+            <img src="https://i.postimg.cc/L8KFFgmz/foto-(2).jpg">
+            <p>ტოლმა</p>
+        <span>1kg 17ლარი</span>
+        </div>
+
+        <div class="item">
+            <img src="https://i.postimg.cc/MKyqTmPD/apkhazura.jpg">
+            <p>აფხაზურა</p>
+            <span> 1kg 23ლარი</span>
+        </div>
+
+        <div class="item">
+            <img src="https://i.postimg.cc/HxG6VXPc/cheburek'i.jpg">
+            <p>ჩებურეკი</p>
+            <span> 1kg19ლარი</span>
+        </div>
+
+        <div class="item">
+            <img src="https://i.postimg.cc/Y9fz0VF7/kotleti.jpg">
+            <p>კოტლეტი</p>
+            <span> 1kg2oლარი</span>
+        </div>
+
+        <div class="item">
+            <img src="https://i.postimg.cc/j5XytfVt/gufta.jpg">
+            <p>გუფთა</p>
+            <span>1kg 18</span>
+        </div>
+    </div>
+<div class="contact-info">
+  <p>შეკვეთისთვის დაგვიკავშირდით:</p>
+  <a href="tel:551100073">551 10 00 73</a>
+  </div>  
+</body>
+</html>
